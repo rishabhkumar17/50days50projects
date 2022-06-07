@@ -18,11 +18,15 @@ body {
 .bg {
   background: url('https://www.whatspaper.com/wp-content/uploads/2021/12/hd-tokyo-ghoul-wallpaper-whatspaper-8.jpg');
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
   z-index: -1;
   filter: blur(0px);
 }
 
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
