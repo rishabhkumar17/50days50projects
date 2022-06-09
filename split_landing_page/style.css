@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+:root {
+  --left-bg-col:  rgba(43, 43, 43, 0.8);
+  --right-bg-col: rgba(87, 84, 236, 0.7);
+}
+
 *{
   box-sizing: border-box;
 }
@@ -30,4 +35,27 @@ body {
   background: url('https://cdn.mos.cms.futurecdn.net/Vh6eSp4siwggK7RUys72nP-650-80.jpg.webp');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-col);
+}
+
+.split.right {
+  right: 0;
+  background: url('https://www.ingame.de/bilder/2020/09/08/90039071/23915031-xbox-series-xbox-series-design-preis-release-microsoft-vorbestellen-299-dollar-2iUnXZ3UgZ8d.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-col);
 }
