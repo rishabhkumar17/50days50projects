@@ -1,4 +1,4 @@
- const jokeEl = document.getElementById('id')
+ const jokeEl = document.getElementById('joke')
  const jokeBtn = document.getElementById('jokeBtn')
 
  generateJoke()
@@ -11,7 +11,9 @@
     }
 
     fetch('https://icanhazdadjoke.com', config)
-    .then(res => res.json())
-    .then(data => console.log(data))
+    .then((res) => res.json())
+    .then((data) => {
+        jokeEl.innerHTML = data.joke
+    })
  }
 
