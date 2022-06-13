@@ -5,6 +5,8 @@
 
  generateJoke()
 
+ //using async/await
+  
  async function generateJoke() {
     const config = {
         headers: {
@@ -18,6 +20,8 @@
     jokeEl.innerHTML = data.joke
 
  }
+
+// using .then
 
 //  function generateJoke() {
 //     const config = {
