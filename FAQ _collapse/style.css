@@ -46,3 +46,22 @@ h1 {
   left: 20px;
   z-index: 0;
 }
+
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotate(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  display: none;
+}
+
+.faq.faq.active .faq-text {
+  display: block;
+}
