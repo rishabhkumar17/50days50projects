@@ -62,6 +62,6 @@ h1 {
   display: none;
 }
 
-.faq.faq.active .faq-text {
+.faq.active .faq-text {
   display: block;
 }
