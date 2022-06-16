@@ -79,5 +79,17 @@ h1 {
   top: 30px;
   right: 30px;
   height: 30px;
-  width: 30px;
+  width: 30px ;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron {
+  display: block;
 }
