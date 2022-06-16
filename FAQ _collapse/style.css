@@ -60,6 +60,7 @@ h1 {
 
 .faq-text {
   display: none;
+  margin: 30px 0 0;
 }
 
 .faq.active .faq-text {
@@ -82,14 +83,25 @@ h1 {
   width: 30px ;
 }
 
+.faq-toggle:focus {
+  outline: 0;
+}
+
 .faq-toggle .fa-times {
   display: none;
 }
 
 .faq.active .faq-toggle .fa-times {
+  color: #fff;
   display: block;
+  background-color: #9fa4a8;
+  padding: 16%;
+  border: 0;
+  border-radius: 50%;
 }
 
-.faq.active .faq-toggle .fa-chevron {
-  display: block;
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
 }
+
+
